@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import logo from '../../assets/belle.webp';
+import logo from '../../assets/kenage.png';
 import NavLinks from './NavLinks'
 import { AiOutlineUser, AiOutlineSearch,AiOutlineClose ,AiOutlineMenu } from 'react-icons/ai'
 import {BsBag} from 'react-icons/bs'
@@ -23,7 +23,7 @@ const Navbar = () => {
    }, [])
 
 	return (
-		<nav className={`${ show ? 'fixed z-20 bg-white drop-shadow-lg duration-500' : 'fixed z-20'}` }>
+		<nav className={`${ show ? 'fixed z-20 bg-white shadow-lg md:left-0 duration-500 top-0 p-2' : 'p-2 md:left-0 top-0 fixed  z-20'}` }>
 			<div className="flex w-screen items-center font-medium justify-between md:px-[80px] px-[10px] inline-block md:pb-0 h-[55px] pb-[5px]">
 			 {/*Mobile Nav*/}
 				<ul className={`
@@ -40,11 +40,11 @@ const Navbar = () => {
 				}
 				</div>
 						
-						<AiOutlineSearch className="text-[20px]"/>
+						<AiOutlineSearch className="text-[20px] hidden"/>
 				</div>
 
 				<div className="md:w-auto items-center pt-[10px]">
-					<img src={logo} alt="logo" className="md:cursor-pointer "/>
+					<img src={logo} alt="logo" className="md:cursor-pointer w-[50px] h-[50px]"/>
 				</div>
 				<ul className="md:flex hidden items-center gap-8 font-[Poppins,Arial,Tahoma,Verdana,sans-serif]">
 					<NavLinks />
