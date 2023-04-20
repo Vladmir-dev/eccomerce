@@ -63,7 +63,7 @@ const Body = () => {
   ]
 
   return (
-    <div className="md:mt-[40px] mt-[10px] items-center justify-center font-[Poppins,Arial,Tahoma,Verdana,sans-serif]">
+    <div className="md:mt-[40px] mt-[10px] flex flex-col items-center justify-center font-[Poppins,Arial,Tahoma,Verdana,sans-serif]">
       <div className="flex justify-center items-center flex-col  p-[5px]">
         <h1 className="uppercase text-[20px] text-[#222] md:p-[5px] p-[2px]">
           NEW ARRIVALS
@@ -109,7 +109,7 @@ const Body = () => {
       </div>
 
       <Carousel1 category={category} />
-      <Carousel2 />
+      {/* <Carousel2 /> */}
      <div className='md:block hidden'>
       <div className="flex items-center justify-center inline-block w-full md:gap-x-20 mb-[20px] ">
         <img

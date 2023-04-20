@@ -3,6 +3,7 @@ import logo from '../../assets/kenage.png';
 import NavLinks from './NavLinks'
 import { AiOutlineUser, AiOutlineSearch,AiOutlineClose ,AiOutlineMenu } from 'react-icons/ai'
 import {BsBag} from 'react-icons/bs'
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -52,10 +53,12 @@ const Navbar = () => {
 				<div className="md:flex flex items-center  gap-3 md:gap-3 md:text-[20px] text-[17px] font-medium">
 					<AiOutlineSearch className="invisible md:visible"/>
 					< AiOutlineUser className="md:hidden"/>
-					<BsBag />
-				</div>
 
-               
+					<Link to='/cart'>
+					<BsBag />
+					</Link>
+					
+				</div>
 			</div>
 		</nav>
 	)

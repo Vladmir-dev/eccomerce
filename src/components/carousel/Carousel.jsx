@@ -38,7 +38,7 @@ const Carousel = () => {
 	// },)
 
 	return (
-		<div className="w-full mt-[-50px] box-border left-0">
+		<div className="w-full  left-0">
 			<div className="w-full flex  flex-col items-center justify-center">
 
 				{CarouselData.map((slide, index) => {
@@ -83,7 +83,7 @@ const Carousel = () => {
 				</div>
 
 			</div>
-			< Body />
+			{/* < Body /> */}
 		</div>
 	)
 }
